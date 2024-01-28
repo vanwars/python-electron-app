@@ -1,0 +1,54 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category {
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: solid 1px transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #333;
+        color: white;
+    }
+
+    .category {
+        background: #ddd;
+        color: #333;
+        border: solid 1px #333;
+    }
+
+    .category:hover {
+        background: #333;
+        color: #ddd;
+        border: solid 1px #ddd;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #ddd;
+        color: black;
+    }
+
+    .category {
+        background: #333;
+        color: #ddd;
+        border: solid 1px transparent;
+    }
+
+    .category:hover {
+        background: #ddd;
+        color: black;
+        border: solid 1px #333;
+    }
+
+}
